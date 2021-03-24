@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two columns that floats next to each other */
+.column-left {
+    position: relative;
+    float: left;
+    margin-top: 9vw;
+    width: 35%;
+    height: 80vh;
+    background: white;
+}
+
+/* Centers all elements vertical in column-left */
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vertical-center img {
+    margin-left: 7vw;
+}
+
+/* Heading text style */
+.heading {
+    padding-top: 2vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    font-family: Georgia, serif;
+    line-height: normal;
+    text-align: left;
+    font-size: 1.6vw;
+}
+
+/* Subheading text style */
+.subheading {
+    margin-top: 1vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    margin-bottom: 3vw;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 0.8vw;
+    color: #6A707B;
+    line-height: 1.5vw;
+}
+
+hr {
+    width:21vw;
+    height: 0.1vw;
+    margin: auto;
+    margin-top: 3vw;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Makes height and space of div for media */
+.media {
+    height: 100px;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+/* Makes style for a tags in media class */
+.media a {
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 3px solid #E2E3E4 ;
+    padding-top: 0.85rem;
+    color: rgba(19,24,33, .3) ;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.media #fb:hover {
+    cursor: pointer;
+    background: #4267B2;
+    opacity: unset;
+    color: white;
+    border: 3px solid #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #fb:focus {
+    background: #2F4A80;
+    opacity: unset;
+    color: white;
+    border: 3px solid #2F4A80;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #ig:hover {
+    cursor: pointer;
+    background: #C13584;
+    opacity: unset;
+    color: white;
+    border: 3px solid #C13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #ig:focus {
+    background: #8F2762;
+    opacity: unset;
+    color: white;
+    border: 3px solid #8F2762;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #tw:hover {
+    cursor: pointer;
+    background: #1DA1F2;
+    opacity: unset;
+    color: white;
+    border: 3px solid #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #tw:focus {
+    background: #177FBF;
+    opacity: unset;
+    color: white;
+    border: 3px solid #177FBF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #yt:hover {
+    cursor: pointer;
+    background: #FF0000;
+    opacity: unset;
+    color: white;
+    border: 3px solid #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #yt:focus {
+    background: #CC0000;
+    opacity: unset;
+    color: white;
+    border: 3px solid #CC0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+
+
+/* Create two columns that floats next to each other */
+.column-right {
+    float: right;
+    width: 65%;
+    height: 100vh;
+    background: url("../images/backgrounds/Welcome_background.png") center center/cover no-repeat;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column-left {
+        top: 15%;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        height: 70%
+    }
+
+    .vertical-center img {
+        margin-left: 5vw;
+        margin-bottom: 5vw;
+        margin-top: 7vw;
+    }
+
+    .heading {
+        padding-top: 5vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 6vw;
+    }
+
+    .subheading {
+        padding-top: 3vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 3.5vw;
+        line-height: 28px;
+    }
+
+    hr {
+        width:80vw;
+        height: 0.1vw;
+        margin: auto;
+        margin-top: 5vh;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .media {
+        height: 20vw;
+        margin-top: 7%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .media a {
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 3px solid #E2E3E4 ;
+        padding-top: 4vw;
+        color: rgba(19,24,33, .3) ;
+        width: 13vw;
+        height: 13vw;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .column-right {
+        width: 100%;
+    }
+}

@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two columns that floats next to each other */
+.column-left {
+    position: relative;
+    float: left;
+    margin-top: 9vw;
+    width: 35%;
+    height: 80vh;
+    background: white;
+}
+
+/* Centers all elements vertical in column-left */
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Heading text style */
+.heading {
+    padding-top: 2vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    font-family: Georgia, serif;
+    line-height: normal;
+    text-align: left;
+    font-size: 1.6vw;
+}
+
+/* Subheading text style */
+.subheading {
+    margin-top: 1vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    margin-bottom: 3vw;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 0.8vw;
+    color: #6A707B;
+    line-height: 1.5vw;
+}
+
+/* Makes style for email input-field */
+#email {
+    border: 0.1vw solid #E3E3E4;
+    border-left: #4066A5 0.3vw solid;
+    padding-left: 2.5vw;
+    font-size: 1vw;
+    position: absolute;
+    z-index: 1;
+    width: 35vw;
+    height: 4vw;
+    margin-left: 5vw;
+    background: white;
+    outline: none;
+}
+
+/* Email input-field hover effect */
+.email_main:hover #email {
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    border: 0.1vw solid #4066A5;
+    border-left: #4066A5 0.3vw solid;
+}
+
+#email_error {
+    margin-top: 5vw;
+    font-size: 1vw;
+    position: absolute;
+    z-index: 1;
+    margin-left: 5vw;
+}
+
+/* Makes space from left side of screen for arrow icon */
+.arrow_in_email_input {
+    padding-left: 37vw;
+}
+
+/* Makes style for arrow icon */
+#arrow {
+    padding-top: 1.5vw;
+    position: absolute;
+    z-index: 3;
+    border: none;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    color: #131821;
+    opacity: 0.3;
+}
+
+#arrow_no_js {
+    cursor: pointer;
+    pointer-events: unset;
+    padding-top: 1.5vw;
+    position: absolute;
+    z-index: 3;
+    border: none;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    color: #131821;
+    opacity: 0.3;
+}
+
+/* Arrow icon hover effect */
+.email_main:hover #arrow {
+    color: #4066A5;
+    opacity: 1;
+}
+
+/* Makes space from right side of screen and sets checkbox size */
+input[type="checkbox"]
+{
+    margin-right: 15px;
+    width: 1.5vw;
+    height: 1.5vw;
+    vertical-align:middle;
+}
+
+/* Terms text style */
+.terms-text {
+    padding-top: 7vw;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 1vw;
+    color: #6A707B;
+}
+
+/* Terms href'ed text style */
+.terms-text-href {
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 1vw;
+}
+
+#checkbox_error {
+    position: absolute;
+    padding-top: 1vw;
+    padding-left: 7vw;
+    font-size: 1vw;
+}
+
+hr {
+    width:21vw;
+    height: 0.1vw;
+    margin: auto;
+    margin-top: 3vw;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Makes height and space of div for media */
+.media {
+    height: 100px;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+/* Makes style for a tags in media class */
+.media a {
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 3px solid #E2E3E4 ;
+    padding-top: 0.85rem;
+    color: rgba(19,24,33, .3) ;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.media #fb:hover {
+    cursor: pointer;
+    background: #4267B2;
+    opacity: unset;
+    color: white;
+    border: 3px solid #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #fb:focus {
+    background: #2F4A80;
+    opacity: unset;
+    color: white;
+    border: 3px solid #2F4A80;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #ig:hover {
+    cursor: pointer;
+    background: #C13584;
+    opacity: unset;
+    color: white;
+    border: 3px solid #C13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #ig:focus {
+    background: #8F2762;
+    opacity: unset;
+    color: white;
+    border: 3px solid #8F2762;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #tw:hover {
+    cursor: pointer;
+    background: #1DA1F2;
+    opacity: unset;
+    color: white;
+    border: 3px solid #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #tw:focus {
+    background: #177FBF;
+    opacity: unset;
+    color: white;
+    border: 3px solid #177FBF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #yt:hover {
+    cursor: pointer;
+    background: #FF0000;
+    opacity: unset;
+    color: white;
+    border: 3px solid #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.media #yt:focus {
+    background: #CC0000;
+    opacity: unset;
+    color: white;
+    border: 3px solid #CC0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+
+
+/* Create two columns that floats next to each other */
+.column-right {
+    float: right;
+    width: 65%;
+    height: 100vh;
+    background: url("../images/backgrounds/Welcome_background.png") center center/cover no-repeat;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column-left {
+        top: 15%;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        height: 70%
+    }
+
+    .heading {
+        padding-top: 5vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 7vw;
+    }
+
+    .subheading {
+        padding-top: 3vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 4vw;
+        line-height: 28px;
+    }
+
+    #email {
+        border: 1px solid #E3E3E4;
+        border-left: #4066A5 4px solid;
+        font-size: 4vw;
+        width: 90%;
+        height: 15vw;
+        background: white;
+        outline: none;
+        padding-left: 20px;
+        margin-top: 5vw;
+        margin-left: 20px;
+    }
+
+    .email_main:hover #email {
+        border-left: #4066A5 4px solid;
+    }
+
+    #email_error {
+        margin-top: 22vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    .arrow_in_email_input {
+        padding-left: 75vw;
+    }
+
+    #arrow {
+        padding-top: 11vw;
+    }
+
+    #arrow_no_js {
+        padding-top: 11vw;
+    }
+
+    input[type="checkbox"]
+    {
+        margin-right: 15px;
+        width: 8vw;
+        height: 8vw;
+        vertical-align:middle;
+    }
+
+    .terms-text {
+        padding-top: 30vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 4vw;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        color: #6A707B;
+    }
+
+    .terms-text-href {
+        cursor: pointer;
+        color: black;
+        text-decoration: underline;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    #checkbox_error {
+        position: absolute;
+        padding-top: 1vw;
+        padding-left: 5vw;
+        font-size: 4vw;
+    }
+
+    hr {
+        width:80vw;
+        height: 0.1vw;
+        margin: auto;
+        margin-top: 5vh;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .media {
+        height: 20vw;
+        margin-top: 7%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .media a {
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 3px solid #E2E3E4 ;
+        padding-top: 4vw;
+        color: rgba(19,24,33, .3) ;
+        width: 13vw;
+        height: 13vw;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .column-right {
+        width: 100%;
+    }
+}
+
